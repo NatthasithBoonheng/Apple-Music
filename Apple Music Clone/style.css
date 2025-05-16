@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: #1f1f1f;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -41,8 +43,9 @@ a {
 .layout{
     display: grid;
     grid-template-columns: 17% auto;
-    grid-template-rows: 100vh auto;
-    grid-template-areas: "bar content";
+    grid-template-areas: "bar navbar "
+                         "bar content"
+                         "ads ads";
     font-family: apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -57,7 +60,7 @@ a {
     margin: 0;
     padding: 0;
     position: fixed;
-    height: 100%;
+    height: 90vh;
     width: 17%;
 }
 
@@ -186,7 +189,7 @@ a {
 .main{
     grid-area: content;
     background-color: #1f1f1f;
-    overflow: scroll;
+    
     scrollbar-color: #ababab #2c2c2c ;
 }
 
@@ -424,6 +427,7 @@ nav{
 .content2{
     padding-top: 1%;
     padding-bottom: 1%;
+    
 }
 
 .p-head {
@@ -435,15 +439,22 @@ nav{
 
 .content2-contain{
     display: flex;
-    justify-content: space-between;
-    gap: 1%;
+    gap: 20px;
     overflow-x: scroll;
     scrollbar-width: none;
+    
 }
 
 .content-card{
-    width: 75%;
-    height:75%;
+    width: 220px;
+    height:260px;
+    flex:0 0 auto;
+}
+
+.content-card img{
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
 }
 
 .content-card p{
@@ -527,3 +538,60 @@ nav{
     margin-right: 10px;
 }
 
+
+/* ส่วนของ ads */
+
+.ads{
+    grid-area: ads;
+    position: fixed;
+    background: #d60017;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ads .text{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.ads .p1{
+    line-height: 1.28;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.ads .p2{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ads .button{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads .button p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    letter-spacing: 0;
+    border-radius: 4px;
+    min-width: 125px;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: unset;
+    background: #fff;
+    color: #000;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+}
