@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: #1f1f1f;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: #ababab #2c2c2c;
 }
 
 
@@ -41,8 +44,8 @@ a {
 .layout{
     display: grid;
     grid-template-columns: 17% auto;
-    grid-template-rows: 100vh auto;
-    grid-template-areas: "bar content";
+    grid-template-areas: "bar content"
+                         "ads ads";
     font-family: apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -57,8 +60,9 @@ a {
     margin: 0;
     padding: 0;
     position: fixed;
-    height: 100%;
+    height: 90%;
     width: 17%;
+    z-index: 1;
 }
 
 .logo{
@@ -186,8 +190,6 @@ a {
 .main{
     grid-area: content;
     background-color: #1f1f1f;
-    overflow: scroll;
-    scrollbar-color: #ababab #2c2c2c ;
 }
 
 nav{
@@ -247,7 +249,7 @@ nav{
     border-radius: 15px;
 }
 
-.circle{
+/* .circle{
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -255,7 +257,7 @@ nav{
     position: absolute;
     top: 20.5px;
     right: 203px;
-}
+} */
 
 .rightbar{
     display: flex;
@@ -282,17 +284,20 @@ nav{
     color: #ffffff;
     font-size: smaller;
     font-weight: 600;
+    font-size: 70%;
+    align-self: center;
 }
 
 .content-contain{
     margin-left: 3%;
     margin-right: 3%;
+    display: flex;
+    justify-content: center;
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    margin-top: 54px;
+    padding-top: 54px;
+    width: 160vh;
 }
 
 .content-header{
@@ -308,7 +313,7 @@ nav{
     display: flex;
     margin-bottom: 0.5%;
     gap: 1.5%;
-    overflow-x: scroll;
+    overflow-x:scroll;
     overflow-y: hidden;
     scrollbar-width: none;
     margin-bottom: 2%;
@@ -322,7 +327,7 @@ nav{
     display: flex;
     align-items: end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
-    url(/img/Alist.webp) center/cover no-repeat;
+    url(/img/New/new1.webp) center/cover no-repeat;
 }
 
 /* .content1-1 div:hover{
@@ -368,7 +373,7 @@ nav{
     display: flex;
     align-items: end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
-    url(/img/Fancy.webp) center/cover no-repeat;
+    url(/img/New/new2.webp) center/cover no-repeat;
 }
 
 /* .content1-2 div:hover{
@@ -389,7 +394,7 @@ nav{
 }
 
 .content1-2 .tittle div{
-    background-image: url(/img/Fancysmall.webp);
+    background-image: url(/img/New/new2small.webp);
     width: 60px;
     height: 60px;
     background-size: cover;
@@ -421,10 +426,124 @@ nav{
     margin-bottom: 3%;
 }
 
-.content2{
-    padding-top: 1%;
-    padding-bottom: 1%;
+
+.content1-3 div{
+    width: 580px;
+    height: 344px;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
+    url(/img/New/new3.webp) center/cover no-repeat;
 }
+
+
+.content1-3 div p{
+    margin-left: 3%;
+    font-size: 80%;
+    color: white;
+    font-weight: 500;
+}
+
+.content1-3 .tittle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1-3 .tittle div{
+    background-image: url(/img/New/new3small.webp);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-right: 3%;
+    margin-bottom: 2.5%;
+    border-radius: 5px;
+}
+
+.content1-3 .p1{
+    font-size: 70%;
+    font-weight: 700;
+    color: #ababab;
+    margin: 4px 0;
+    margin-top: 2%;
+}
+
+.content1-3 .p2{
+    font-size: 110%;
+    font-weight: 500;
+    color: #d9d9d9;
+    margin: 0px 0;
+}
+
+.content1-3 .p3{
+    font-size: 110%;
+    font-weight: 500;
+    color: #ababab;
+    margin: 0px 0;
+    margin-bottom: 3%;
+}
+
+
+.content1-4 div{
+    width: 580px;
+    height: 344px;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
+    url(/img/New/new4.webp) center/cover no-repeat;
+}
+
+
+.content1-4 div p{
+    margin-left: 3%;
+    font-size: 80%;
+    color: white;
+    font-weight: 500;
+}
+
+.content1-4 .tittle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1-4 .tittle div{
+    background-image: url(/img/New/new4small.webp);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-right: 3%;
+    margin-bottom: 2.5%;
+    border-radius: 5px;
+}
+
+.content1-4 .p1{
+    font-size: 70%;
+    font-weight: 700;
+    color: #ababab;
+    margin: 4px 0;
+    margin-top: 2%;
+}
+
+.content1-4 .p2{
+    font-size: 110%;
+    font-weight: 500;
+    color: #d9d9d9;
+    margin: 0px 0;
+}
+
+.content1-4 .p3{
+    font-size: 110%;
+    font-weight: 500;
+    color: #ababab;
+    margin: 0px 0;
+    margin-bottom: 3%;
+}
+
+/* .content2{
+    
+    
+} */
 
 .p-head {
     color: #d9d9d9;
@@ -435,15 +554,17 @@ nav{
 
 .content2-contain{
     display: flex;
-    justify-content: space-between;
-    gap: 1%;
+    gap: 15px;
     overflow-x: scroll;
     scrollbar-width: none;
+    white-space: nowrap;
+    padding-bottom: 6%;
 }
 
 .content-card{
-    width: 75%;
-    height:75%;
+    flex: 0 0 auto;
+    width: 220px;
+    height: 220px;
 }
 
 .content-card p{
@@ -465,23 +586,24 @@ nav{
     font-weight: 500;
 }
 
-.content3 {
+/* .content3 {
     padding-top: 1%;
     padding-bottom: 1%;
-}
+} */
 
 .content3-contain{
     display: flex;
-    gap: 2%;
-    overflow-x: scroll;
+    gap: 3%;
+    overflow-x:scroll;
     overflow-y: hidden;
     scrollbar-width: none;
 }
 
 .col{
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 50vh;
 }
 
 .row{
@@ -527,3 +649,508 @@ nav{
     margin-right: 10px;
 }
 
+.content4{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 6%;
+}
+
+.content4-contain{
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+
+
+/* ส่วนของ ads */
+
+.ads{
+    grid-area: ads ;
+    position: sticky;
+    background: #d60017;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ads .text{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.ads .p1{
+    line-height: 1.28;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.ads .p2{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ads .button{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads .button p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    letter-spacing: 0;
+    border-radius: 4px;
+    min-width: 125px;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: unset;
+    background: #fff;
+    color: #000;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+}
+
+/* Content3-big */
+
+
+.row-big{
+    display: flex; 
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.row-big svg{
+    align-self: center;
+    margin-right: 15px;
+}
+
+.row-big .content3-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.row-big .row-contain{
+    width: 300px;
+    height: 130px;
+}
+
+.row-big .row-contain .p0{
+    color: #ababab;
+    font-size: 80%;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.row-big .row-contain .p0+.p1{
+    margin-top: 0;
+    padding-top: 3px;
+    font-size: 90%;
+}
+
+/* content1-small */
+
+.content2-contain-big{
+    display: flex;
+    gap: 27px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    padding-bottom: 6%;
+}
+
+.content-card-big{
+    flex: 0 0 auto;
+    width: 265px;
+    height: 150px;
+}
+
+.content-card-big img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-card-big p{
+    margin-top: 0;
+}
+
+.content-card-big .p1{
+    color: #d9d9d9;
+    margin-bottom: 0;
+    font-size: 80%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-card-big .p2{
+    color: #ababab;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+/* More to Expolre */
+.expolre{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.box-contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 2%;
+    font-weight: 400;
+}
+
+.box-row div{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    background-color: #2a2a2a;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-radius: 8px;
+    color: #f25668d4;
+    font-size:medium;
+}
+
+/* footer */
+
+.footer{
+    background-color: #323232;
+    padding-left: 3.5%;
+    padding-top: 10px;
+    padding-bottom: 2%;
+}
+
+.footer span{
+    color: #d9d9d9;
+    font-size: 12px;
+    font-size: 600;
+}
+
+.footer p{
+    color: #ababab;
+    font-size: 12px;
+    font-size: 600;
+}
+
+.footer .p1{
+    padding-bottom: 10px;
+}
+
+/* Mobile */
+.m-ham{
+    display: none;
+}
+
+.m-logo{
+    display: none;
+}
+
+.m-sign{
+    display: none;
+}
+
+.ads-x{
+    display: none;
+}
+
+.Musicbox{
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar{
+        display: none;
+    }
+    .layout{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "content";
+    font-family: apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    nav{
+    display:flex ;
+    justify-content: space-between;
+    background-color: #2c2c2c;
+    top: 0%;
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    }
+
+    .audioplay{
+        display: none;
+    }
+
+    .applebar{
+        display: none;
+    }
+
+    .app1{
+        display: none;
+    }
+
+    .app2{
+        display: none;
+    }
+
+    .app2 svg{
+        display: none;
+    }
+
+    .volume{
+        display: none;
+    }
+
+    .boxline{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .rightbar{
+        display: none;
+    }
+
+    .signin{
+        display: none;
+    }
+
+    .m-ham{
+        display: block;
+        padding-left: 20px;
+        font-size: 40px;
+        font-weight: 400;
+        color:#f25668d4;
+    }
+
+    .m-logo{
+        display: block;
+    }
+
+    .m-sign{
+        display:block;
+        padding-right: 20px;
+        color: #f25668d4;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+
+    .content{
+        overflow-x: hidden;
+    }
+
+    .content-contain{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10vh;
+    }
+
+    .content1-1 div , .content1-2 div, .content1-3 div , .content1-4 div{
+        height: 170px;
+        width: 298px;
+    }
+
+    .content-card {
+        width: 144px;
+        height: 10%;
+    }
+
+    .content-card-big{
+    flex: 0 0 auto;
+    width: 200px;
+    height: 142px;
+    }
+
+    .content-card-big img{
+    width: 200px;
+    height: 80%;
+    }
+    
+    .row-big svg{
+        align-self: center;
+        margin-right: 20px;
+    }
+
+    .row-big .row-contain{
+    width: auto;
+    height: auto;
+    }
+
+    .row-big .content3-img{
+        width: 97px;
+        height: 97px;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+    }
+
+    .row-contain .p0{
+        color: #ababab;
+        font-size: 60%;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .row-contain .p1{
+        font-size: 80%;
+    }
+
+    .expolre{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    }
+
+    .box-contain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-row{
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-row div{
+        display: flex;
+        justify-content: space-between;
+        width: 89%;
+        background-color: #2a2a2a;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        border-radius: 8px;
+        color: #f25668d4;
+        font-size:medium;
+        margin-bottom: 8px;
+    }
+
+    .ads{
+    grid-area:none;
+    position: fixed;
+    background: #d60017;
+    height: fit-content;
+    width: 100%;
+    top: 40px;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .ads .text{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .ads .p1{
+        font-weight: 600;
+        font-size: 80%;
+        margin-top: 0;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    .ads .p2{
+        margin-top: 0;
+        font-size: 9px;
+        font-weight: 500;
+        color: #d9d9d9;
+        text-align: center;
+    }
+
+    .ads .button{
+        display: none;
+    }
+
+    .footer{
+    background-color: #323232;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10px;
+    padding-bottom: 2%;
+    padding-bottom: 70px;
+    }
+
+    .footer span{
+    color: #d9d9d9;
+    font-size: 10px;
+    font-size: 600;
+    }
+
+    .footer p{
+        color: #ababab;
+        font-size: 10px;
+        font-size: 600;
+    }
+
+    .Musicbox{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 90%;
+        background-color: #252525;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        align-items: center;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    }
+    .left{
+        padding-left: 10px;
+    }
+    .right{
+        padding-right: 10px;
+    }
+    
+}
