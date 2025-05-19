@@ -683,6 +683,8 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     color: white;
+    font-family: apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
 }
 
 .ads .p1{
