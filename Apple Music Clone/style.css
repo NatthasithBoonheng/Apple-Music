@@ -39,7 +39,7 @@ a {
     margin-left: 2%;
 }
 
-
+/* LAYOUT */
 
 .layout{
     display: grid;
@@ -49,7 +49,7 @@ a {
     font-family: apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-
+/* SIDEBAR */
 
 .sidebar{
     background-color: #252526;
@@ -187,10 +187,14 @@ a {
 }
 
 
+/* MAIN */
+
 .main{
     grid-area: content;
     background-color: #1f1f1f;
 }
+
+/* NAVBAR */
 
 nav{
     background-color: #2c2c2c;
@@ -288,6 +292,8 @@ nav{
     align-self: center;
 }
 
+/* CONTENT */
+
 .content-contain{
     margin-left: 3%;
     margin-right: 3%;
@@ -308,6 +314,8 @@ nav{
     border-bottom: #363636 1px solid;
     margin-bottom: 0;
 }
+
+/* CONTENT1 */
 
 .content1{
     display: flex;
@@ -540,10 +548,7 @@ nav{
     margin-bottom: 3%;
 }
 
-/* .content2{
-    
-    
-} */
+/* CONTENT2 */
 
 .p-head {
     color: #d9d9d9;
@@ -586,10 +591,7 @@ nav{
     font-weight: 500;
 }
 
-/* .content3 {
-    padding-top: 1%;
-    padding-bottom: 1%;
-} */
+/* CONTENT3 */
 
 .content3-contain{
     display: flex;
@@ -648,6 +650,8 @@ nav{
     background-size: cover;
     margin-right: 10px;
 }
+
+/* CONTENT4 */
 
 .content4{
     display: flex;
@@ -765,7 +769,7 @@ nav{
     font-size: 90%;
 }
 
-/* content1-small */
+/* content2-BIG */
 
 .content2-contain-big{
     display: flex;
@@ -891,6 +895,7 @@ nav{
     .sidebar{
         display: none;
     }
+    
     .layout{
     display: grid;
     grid-template-columns: 100%;
