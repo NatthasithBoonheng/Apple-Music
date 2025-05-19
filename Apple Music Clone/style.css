@@ -327,12 +327,12 @@ nav{
     display: flex;
     align-items: end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
-    url(/img/New/new1.webp) center/cover no-repeat;
+    url(img/New/new1.webp) center/cover no-repeat;
 }
 
 /* .content1-1 div:hover{
     background: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)),
-    url(/img/Alist.webp) center/cover no-repeat;
+    url(img/Alist.webp) center/cover no-repeat;
 } */
 
 .content1-1 div p{
@@ -373,12 +373,12 @@ nav{
     display: flex;
     align-items: end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
-    url(/img/New/new2.webp) center/cover no-repeat;
+    url(img/New/new2.webp) center/cover no-repeat;
 }
 
 /* .content1-2 div:hover{
     background: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)),
-    url(/img/f1.webp) center/cover no-repeat;
+    url(img/f1.webp) center/cover no-repeat;
 } */
 
 .content1-2 div p{
@@ -394,7 +394,7 @@ nav{
 }
 
 .content1-2 .tittle div{
-    background-image: url(/img/New/new2small.webp);
+    background-image: url(img/New/new2small.webp);
     width: 60px;
     height: 60px;
     background-size: cover;
@@ -434,7 +434,7 @@ nav{
     display: flex;
     align-items: end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
-    url(/img/New/new3.webp) center/cover no-repeat;
+    url(img/New/new3.webp) center/cover no-repeat;
 }
 
 
@@ -451,7 +451,7 @@ nav{
 }
 
 .content1-3 .tittle div{
-    background-image: url(/img/New/new3small.webp);
+    background-image: url(img/New/new3small.webp);
     width: 60px;
     height: 60px;
     background-size: cover;
@@ -491,7 +491,7 @@ nav{
     display: flex;
     align-items: end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
-    url(/img/New/new4.webp) center/cover no-repeat;
+    url(img/New/new4.webp) center/cover no-repeat;
 }
 
 
@@ -508,7 +508,7 @@ nav{
 }
 
 .content1-4 .tittle div{
-    background-image: url(/img/New/new4small.webp);
+    background-image: url(img/New/new4small.webp);
     width: 60px;
     height: 60px;
     background-size: cover;
